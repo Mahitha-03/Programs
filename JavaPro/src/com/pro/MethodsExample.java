@@ -4,27 +4,26 @@ public class MethodsExample {
 	static MethodsExample obj;
 	static {
 		 obj =new MethodsExample();
-		 method1();
-		 method2();
-		 obj.method3();
-		 obj.method4();
-		 
+		
 	}
 	 
 	static void method1()
 	{
 		System.out.println("static method1 called");
+		method2();
 		
 	}
 	
 	static void method2()
 	{
 		System.out.println("static method2 called");
+		obj.method3();
 		
 	}
 	void method3()
 	{
 		System.out.println("Instance method3");
+		obj.method4();
 		
 	}
 	void method4()
@@ -33,7 +32,7 @@ public class MethodsExample {
 	}
 
 	public static void main(String[] args) {
-	
+	 method1();
 
 	}
 
